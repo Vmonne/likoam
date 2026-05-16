@@ -1,7 +1,5 @@
 # LIKOAM — Système de Gestion des Archives / Records Management System
 
-> **L**ogiciel **I**ntégré de gestion des archives **C**ourantes et intermédiaires **O**pérationnelles et **A**dministratives **M**odernes
-
 [![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)](https://github.com/VMONNE/likoam)
 [![Licence](https://img.shields.io/badge/licence-GPL%20v3-green.svg)](LICENSE)
 [![Plateforme](https://img.shields.io/badge/plateforme-Google%20Apps%20Script-yellow.svg)](https://script.google.com)
@@ -195,4 +193,3 @@ This project is licensed under the **GNU General Public License v3.0** — see t
 
 ---
 
-*LIKOAM — Because every document deserves to be properly managed.*
