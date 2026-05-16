@@ -106,46 +106,52 @@ Ce projet est sous licence **GNU General Public License v3.0** — voir le fichi
 
 ### 📋 What is LIKOAM?
 
-LIKOAM is a web-based **records and archives management system** designed for institutions of all sizes — ministries, local authorities, NGOs, companies, and community organizations. It runs entirely on Google Workspace infrastructure (Google Sheets + Google Drive), making it lightweight, accessible, and easy to deploy without any server installation.
-
-LIKOAM was designed by an archivist, for archivists — with a deep understanding of archival science standards and the realities of working in under-resourced environments.
+LIKOAM is a web-based current and semi-current records management system built for institutions seeking to digitize their records management practices while preparing for eventual transfer to a permanent archival repository. It is suitable for organizations of all types and sizes — government ministries, local authorities, NGOs, corporations, and community organizations.
+LIKOAM runs entirely on Google Workspace infrastructure (Google Sheets + Google Drive), making it lightweight, cost-effective, and straightforward to deploy — no server, no IT department required.
 
 ---
+✨ Core Features
+📊 Dashboard
 
-### ✨ Key Features
+Live overview of records status across the institution
+Automated alerts for records approaching end of retention period
+Quick access to records pending appraisal and validation
 
-#### 📊 Dashboard
-- Real-time statistics on document status
-- Alerts for documents nearing their retention deadline
-- Quick access to documents pending validation
+📤 Accession
 
-#### 📤 Document Submission
-- Submit documents with metadata (title, category, service/department)
-- Automatic file upload to Google Drive
-- Instant generation of a submission receipt
+Register incoming records with full descriptive metadata (title, category, creating department)
+Automatic upload and filing to Google Drive, organized by department and record series
+Instant generation of a transfer form upon accession
 
-#### 🔍 Search & Retrieval
-- Multi-criteria search (title, agent, service, category, status)
-- Direct document consultation via Google Drive preview
-- Results limited to the agent's own service (role-based access)
+🔍 Search & Retrieval
 
-#### 🗄️ Archives Vault
-- Validated documents with applied retention rules (DUA)
-- Automatic calculation of elimination dates
-- Final disposition tracking: Destruction (D), Sorting (T), Permanent Conservation (C)
-- Filters by category, service, disposition, and deadline
+Advanced search across multiple fields (title, creator, department, record series, status)
+Direct document access via Google Drive preview
+Access restricted by department and user role
 
-#### 📋 Registers
-- Automatic generation of submission records
-- Automatic generation of elimination records
-- Printable PDF-ready documents
-- Complete register with search and filter capabilities
+🗄️ Archival Repository
 
-#### ⚙️ Administration Panel
-- Agent management (create, activate/deactivate, role assignment)
-- Service and department configuration
-- Category management with retention periods (DUA) and final disposition
-- Role-based access control (Admin / User)
+Validated records managed according to approved retention schedules
+Automatic calculation of disposal dates based on retention periods
+Disposition tracking: Destruction (D), Review (T), Permanent Preservation (C)
+Filtering by record series, department, disposition action, and disposal date
+
+📋 Records Registers
+
+Automatic generation of transfer forms
+Automatic generation of disposal authorization forms
+Print-ready documents for official records
+Searchable and filterable register of all transfers and disposals
+
+⚙️ Administration
+
+User management (registration, activation/deactivation, role assignment)
+Department and service configuration
+Record series management with retention periods and disposition actions
+Role-based access control (Administrator / User)
+
+
+
 
 ---
 
@@ -160,53 +166,6 @@ LIKOAM was designed by an archivist, for archivists — with a deep understandin
 | Authentication | Internal agent code system |
 | Deployment | Google Apps Script Web App |
 
-**No server required. No installation. No maintenance costs.**
-
----
-
-### 🚀 Getting Started
-
-#### Prerequisites
-- A Google account
-- Access to Google Sheets and Google Drive
-- Basic knowledge of Google Apps Script deployment
-
-#### Deployment Steps
-
-1. **Create the Google Sheet**
-   - Create a new Google Sheet with the following tabs:
-     - `Sheet1` (main documents sheet)
-     - `Agents`
-     - `SERVICES`
-     - `Référence DUA`
-     - `BORDEREAUX`
-
-2. **Set up Apps Script**
-   - Open your Google Sheet → Extensions → Apps Script
-   - Create a new file `Code.gs` and paste the backend code
-   - Create a new file `Index.html` and paste the frontend code
-
-3. **Configure the manifest**
-   - Enable the `appsscript.json` manifest file in Project Settings
-   - Add the required OAuth scopes
-
-4. **Deploy as Web App**
-   - Click Deploy → New Deployment
-   - Type: Web App
-   - Execute as: Me
-   - Who has access: Anyone
-   - Copy the deployment URL
-
-5. **Create your first Admin agent**
-   - Open your `Agents` sheet
-   - Add a row with: Name, AgentCode, Actif, Service, Email, Admin
-
-6. **Access the application**
-   - Open the deployment URL
-   - Enter your agent code
-   - Click SE CONNECTER
-
----
 
 ### 📁 Repository Structure
 
@@ -218,51 +177,6 @@ likoam/
 ├── README.md            # This file
 └── LICENSE              # GPL v3
 ```
-
----
-
-### 🌍 Internationalization
-
-LIKOAM v1.0 is available in **French**.
-
-Planned translations:
-- 🇬🇧 English — in progress
-- 🇧🇷 Portuguese — in progress
-
-Contributions for translations are welcome!
-
----
-
-### 🗺️ Roadmap
-
-#### V1.0 (Current)
-- [x] Document submission and validation workflow
-- [x] Multi-criteria search
-- [x] Retention rules (DUA) management
-- [x] Elimination and submission records
-- [x] Role-based access control
-- [x] Mobile responsive interface
-
-#### V2.0 (In Development)
-- [ ] Python / Flask / SQLite stack
-- [ ] Full offline capability
-- [ ] Local network deployment (no internet required)
-- [ ] OCR document indexing
-- [ ] AI-assisted classification (RAG)
-- [ ] Multi-institution support
-- [ ] REST API
-
----
-
-### 🤝 Contributing
-
-LIKOAM is an open-source project born from real archival practice. Contributions are welcome!
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
 
 ---
 
