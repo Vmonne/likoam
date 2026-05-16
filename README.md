@@ -94,7 +94,7 @@ Archiviste digitale
 
 ### 📄 Licence
 
-Ce projet est sous licence **GNU General Public License v3.0** — voir le fichier [LICENSE](LICENSE) pour plus de détails.
+Ce projet est sous licence **GNU Affero General Public License v3.0** — voir le fichier [LICENSE](LICENSE) pour plus de détails.
 
 ---
 
@@ -189,7 +189,7 @@ Digital Archivist
 
 ### 📄 License
 
-This project is licensed under the **GNU General Public License v3.0** — see the [LICENSE](LICENSE) file for details.
+This project is licensed under the **GNU Affero General Public License v3.0** — see the [LICENSE](LICENSE) file for details.
 
 ---
 
