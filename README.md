@@ -84,8 +84,8 @@ likoam/
 
 ### 👩🏽‍💻 Auteure
 
-**Victorine Monné Kpan**
-Conservateur d'Archives | Gestionnaire de documents | Développeuse
+**Victorine Monné Loua**
+Archiviste digitale
 
 - 🌐 Site web : [victorinemonne.com](https://victorinemonne.com)
 - 💼 LinkedIn : [linkedin.com/in/victorine-monné](https://ci.linkedin.com/in/victorine-monn%C3%A9-0a3247b9)
@@ -150,9 +150,6 @@ Department and service configuration
 Record series management with retention periods and disposition actions
 Role-based access control (Administrator / User)
 
-
-
-
 ---
 
 ### 🏗️ Technical Architecture
@@ -182,8 +179,8 @@ likoam/
 
 ### 👩🏽‍💻 Author
 
-**Victorine Monné Kpan**
-Conservateur d'Archives | Records Manager | Developer
+**Victorine Monné Loua**
+Digital Archivist
 
 - 🌐 Website: [victorinemonne.com](https://victorinemonne.com)
 - 💼 LinkedIn: [linkedin.com/in/victorine-monné](https://ci.linkedin.com/in/victorine-monn%C3%A9-0a3247b9)
