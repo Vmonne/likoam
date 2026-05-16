@@ -17,9 +17,7 @@
 
 ### 📋 Qu'est-ce que LIKOAM ?
 
-LIKOAM est un système de gestion des archives courantes et intermédiaires accessible via le web, conçu pour les institutions de toute taille — ministères, collectivités locales, ONG, entreprises et organisations communautaires. Il fonctionne entièrement sur l'infrastructure Google Workspace (Google Sheets + Google Drive), ce qui le rend léger, accessible et facile à déployer sans aucune installation de serveur.
-
-LIKOAM a été conçu par une archiviste, pour les archivistes — avec une compréhension approfondie des normes archivistiques et des réalités du travail en environnement à ressources limitées.
+LIKOAM est un système de gestion des archives courantes et intermédiaires, conçu pour les institutions qui veulent digitaliser la gestion de leurs documents tout en préparant la migration vers un SAE définitif. Likoam convient à toute sorte d’organisation : Ministères, collectivités, ONG, entreprises et organisations communautaires. Il fonctionne entièrement sur l'infrastructure Google Workspace (Google Sheets + Google Drive), ce qui le rend léger, accessible et facile à déployer sans installation de serveur.
 
 ---
 
@@ -32,11 +30,11 @@ LIKOAM a été conçu par une archiviste, pour les archivistes — avec une comp
 
 #### 📤 Versement documentaire
 - Versement de documents avec métadonnées (titre, catégorie, service/département)
-- Upload automatique du fichier vers Google Drive
+- Upload automatique du fichier vers Google Drive organisé par service et catégorie de documents
 - Génération instantanée d'un bordereau de versement
 
 #### 🔍 Recherche et consultation
-- Recherche multicritères (titre, agent, service, catégorie, statut)
+- Recherche avancée
 - Consultation directe du document via prévisualisation Google Drive
 - Résultats filtrés selon le service de l'agent (contrôle d'accès par rôle)
 
@@ -70,53 +68,7 @@ LIKOAM a été conçu par une archiviste, pour les archivistes — avec une comp
 | Frontend | HTML5 / CSS3 / Bootstrap 5 / Vanilla JS |
 | Authentification | Système de code agent interne |
 | Déploiement | Google Apps Script Web App |
-
-**Aucun serveur requis. Aucune installation. Aucun coût de maintenance.**
-
----
-
-### 🚀 Démarrage rapide
-
-#### Prérequis
-- Un compte Google
-- Accès à Google Sheets et Google Drive
-- Notions de base sur le déploiement Google Apps Script
-
-#### Étapes de déploiement
-
-1. **Créer le Google Sheet**
-   - Créer un nouveau Google Sheet avec les onglets suivants :
-     - `Sheet1` (feuille principale des documents)
-     - `Agents`
-     - `SERVICES`
-     - `Référence DUA`
-     - `BORDEREAUX`
-
-2. **Configurer Apps Script**
-   - Ouvrir le Google Sheet → Extensions → Apps Script
-   - Créer un fichier `Code.gs` et coller le code backend
-   - Créer un fichier `Index.html` et coller le code frontend
-
-3. **Configurer le manifeste**
-   - Activer le fichier `appsscript.json` dans les Paramètres du projet
-   - Ajouter les scopes OAuth nécessaires
-
-4. **Déployer en tant qu'application Web**
-   - Cliquer sur Déployer → Nouveau déploiement
-   - Type : Application Web
-   - Exécuter en tant que : Moi
-   - Accès : Tout le monde
-   - Copier l'URL de déploiement
-
-5. **Créer votre premier agent Admin**
-   - Ouvrir la feuille `Agents`
-   - Ajouter une ligne : Nom, CodeAgent, Actif, Service, Email, Admin
-
-6. **Accéder à l'application**
-   - Ouvrir l'URL de déploiement
-   - Saisir votre code agent
-   - Cliquer sur SE CONNECTER
-
+  
 ---
 
 ### 📁 Structure du dépôt
@@ -129,53 +81,6 @@ likoam/
 ├── README.md            # Ce fichier
 └── LICENSE              # GPL v3
 ```
-
----
-
-### 🌍 Internationalisation
-
-LIKOAM v1.0 est disponible en **français**.
-
-Traductions prévues :
-- 🇬🇧 Anglais — en cours
-- 🇧🇷 Portugais — en cours
-
-Les contributions pour les traductions sont les bienvenues !
-
----
-
-### 🗺️ Feuille de route
-
-#### V1.0 (Version actuelle)
-- [x] Workflow de versement et validation des documents
-- [x] Recherche multicritères
-- [x] Gestion des règles de conservation (DUA)
-- [x] Bordereaux d'élimination et de versement
-- [x] Contrôle d'accès par rôle
-- [x] Interface responsive mobile
-
-#### V2.0 (En développement)
-- [ ] Stack Python / Flask / SQLite
-- [ ] Fonctionnement entièrement hors ligne
-- [ ] Déploiement en réseau local (sans internet)
-- [ ] Indexation OCR des documents
-- [ ] Classification assistée par IA (RAG)
-- [ ] Support multi-institutions
-- [ ] API REST
-
----
-
-### 🤝 Contribuer
-
-LIKOAM est un projet open source né d'une pratique archivistique réelle. Les contributions sont les bienvenues !
-
-1. Forker le dépôt
-2. Créer une branche (`git checkout -b feature/NouvelleFonctionnalite`)
-3. Commiter vos modifications (`git commit -m 'Ajout nouvelle fonctionnalité'`)
-4. Pousser la branche (`git push origin feature/NouvelleFonctionnalite`)
-5. Ouvrir une Pull Request
-
----
 
 ### 👩🏽‍💻 Auteure
 
@@ -195,9 +100,6 @@ Ce projet est sous licence **GNU General Public License v3.0** — voir le fichi
 
 ---
 
-*LIKOAM — Parce que chaque document mérite d'être correctement géré.*
-
----
 ---
 
 ## 🇬🇧 English
